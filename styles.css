@@ -3,3 +3,97 @@ body{
     font-weight: 400;
     font-style: normal;
   }
+
+.headshot{
+  position: absolute;
+  top: 550px;
+  left: 1580px;
+}
+.og{
+  position: absolute;
+  top: 400px;
+  left: 450px;
+}
+
+.og{
+  background-color: #ffffff;
+  background-image: url("images/og.png");
+  background-size: 100%; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  transition: .5s;
+  width: 700px;
+  height: 500px;
+}
+
+.og:hover{ 
+  transform: scale(1.75);
+  transition: .5s;
+  animation-name: rotateImages;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+
+
+}
+.hover {
+  display: grid;
+  grid-template-columns: repeat(5, 700px);
+  grid-template-rows: 700px;
+  grid-gap: 20px;
+}
+#one{
+  background-color: #ffffff;
+  background-image: url(images/skatespotnew1.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat; 
+  transition: .5s;
+}
+#one:hover{
+  background-image: url(images/enpleinair1.png);
+  transition: .5s;
+}
+#two{
+  background-color: #ffffff;
+  background-image: url(images/skatespotnew2.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat; 
+  transition: .5s;
+}
+#two:hover{
+  background-image: url(images/enpleinair2.png);
+  transition: .5s;
+}
+#three{
+  background-color: #ffffff;
+  background-image: url(images/skatespotnew3.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat; 
+  transition: .5s;
+}
+#three:hover{
+  background-image: url(images/enpleinair3.png);
+  transition: .5s;
+}
+@keyframes rotateImages {
+  0% {
+    background-image: url("images/screenfull.png");
+}
+
+60%{
+    background-image: url("images/screenfull2.png");
+}
+
+100%{
+    background-image: url("images/screenfull3.png");
+
+
+}
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
